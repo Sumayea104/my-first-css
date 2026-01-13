@@ -5,25 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mixed selectors</title>
     <style>
+        *{
+            /* margin: 10; */
+        }
         p{
-            color: chartreuse;
+            /* color: chartreuse; */
         }
-        #fifth{
+        #fifth, li{
             background-color: rgb(238, 11, 11);
-            font-size: 46px;
+            font-size: 22px;
         }
-        .yellow{
+        .holud, .yellow{
             background-color: yellowgreen;
+        }
+        .bold{
+            background-color: rgb(192, 185, 211);
+            font-weight: 800;
+        }
+        input[type="password"]{
+            font-size: 30px;
+            color: rgb(240, 10, 56);
+            background-color: darkred;
+        }
+        .css{
+            color: rgba(99, 4, 4, 0.308);
         }
     </style>
 </head>
 <body>
-    <p>First Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
+    <div class="blog">
+        <h3>My Blog</h3>
+        <p>Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita iure vero eaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perspiciatis blanditiis excepturi consectetur quaerat!</p>
+    </div>
+    <p>First Lorem <span class="css">ipsum dolor sit amet consectetur</span> adipisicing elit. Rem, ratione!</p>
     <p class="yellow">Second Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
     <p>Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
     <p>Fourth Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
     <p class="fifth">Fifth Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
     <p class="yellow">Sixth Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
     <p>Seventh Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione!</p>
+    <ol>
+        <li>ELEMENT SELECTOR</li>
+        <li>ID SELECTOR</li>
+        <li>class SELECTOR</li>
+        <li class="bold holud">universal SELECTOR</li>
+        <li>SELECTOR</li>
+        <li>SELECTOR</li>
+    </ol>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+    </form>
+    
 </body>
 </html>
